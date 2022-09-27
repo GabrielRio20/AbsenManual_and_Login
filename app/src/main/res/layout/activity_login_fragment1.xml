@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment1">
+
+    <EditText
+        android:id="@+id/password1"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:height="50dp"
+        android:background="@drawable/drawable_text_background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt1" />
+
+    <TextView
+        android:id="@+id/email_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email1"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:height="50dp"
+        android:background="@drawable/drawable_text_background"
+        android:ems="10"
+        android:hint="example@email.com"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_txt1" />
+
+    <TextView
+        android:id="@+id/password_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+    <Button
+        android:id="@+id/masuk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_btn"
+        android:text="masuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
